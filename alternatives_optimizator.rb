@@ -18,6 +18,7 @@ class AlternativesOptimizator
           @alternatives_list.delete_at(j)
         elsif compare(j, i)
           @alternatives_list.delete_at(i)
+          i -= 1
           break
         else
           j += 1
